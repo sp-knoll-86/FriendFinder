@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Friend Finder</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <h1>Friend Finder</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h2>Survey</h2>
+                <hr>
+                <h3>About You</h3>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="userName" placeholder="Your Name" aria-label="Your Name"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="userImage" placeholder="Your Image" aria-label="Your Image"
+                        aria-describedby="basic-addon1">
+                </div>
+                <hr>
+                <div class="dropdown">
+                    <h2>Question 1</h2>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        I enjoy playing sports
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="questionOne">
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
+                        <a class="dropdown-item" href="#">2</a>
+                        <a class="dropdown-item" href="#">3</a>
+                        <a class="dropdown-item" href="#">4</a>
+                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <h2>Question 2</h2>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Education is important to you
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="questionTwo">
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
+                        <a class="dropdown-item" href="#">2</a>
+                        <a class="dropdown-item" href="#">3</a>
+                        <a class="dropdown-item" href="#">4</a>
+                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <h2>Question 3</h2>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        I enjoy going to the movies
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="questionThree">
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
+                        <a class="dropdown-item" href="#">2</a>
+                        <a class="dropdown-item" href="#">3</a>
+                        <a class="dropdown-item" href="#">4</a>
+                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <h2>Question 4</h2>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        I enjoy the outdoors
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="questionFour">
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
+                        <a class="dropdown-item" href="#">2</a>
+                        <a class="dropdown-item" href="#">3</a>
+                        <a class="dropdown-item" href="#">4</a>
+                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <h2>Question 5</h2>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ketchup is my favorite food
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="questionFive">
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
+                        <a class="dropdown-item" href="#">2</a>
+                        <a class="dropdown-item" href="#">3</a>
+                        <a class="dropdown-item" href="#">4</a>
+                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+                    </div>
+                </div>
+
+                <br>
+
+                <button type="button" class="btn btn-primary" id="submitButton">Submit Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Best Match</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6 id="bestMatch"></h6>
+                    <img id="matchImage" width="500px" src="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("select").formSelect();
+            $(".modal").modal({
+                dismissable: false,
+            });
+        });
+
+        $("#submitButton").on("click", function (event) {
+            event.preventDefault();
+
+            var valid = true;
+            if ($("#userName").val() === "" || $("userPhoto").val() === "") {
+                valid = false;
+            } else if ($("#questionOne").val() === "" || $("#questionTwo").val() === "" || $("#questionThree")
+                .val() === "" || $("#questionFour").val() === "" || $("#questionFive").val() === "") {
+                valid = false;
+            }
+            if (valid === true) {
+                var userInput = {
+                    name: $('#userName').val().trim(),
+                    photo: $('#userPhoto').val().trim(),
+                    scores: [
+                        $('#questionOne').val(),
+                        $('#questionTwo').val(),
+                        $('#questionThree').val(),
+                        $('#questionFour').val(),
+                        $('#questionFive').val()
+                    ]
+                };
+                var currentURL = window.location.origin;
+                $.post(currentURL + "/api/friends", userInput, function (data) {
+                    $("#bestMatch").html(data.matchName);
+                    $("#matchImage").attr("src", data.matchImage);
+                    $("#exampleModalCenter").modal("open");
+                });
+            } else {
+                M.toast({
+                    html: 'You must enter all fields to find your best match!',
+                    classes: 'toasted'
+                })
+            }
+        })
+    </script>
+</body>
+
+</html>
