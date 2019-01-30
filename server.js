@@ -19,7 +19,6 @@ app.use(bodyParser.text());
 // Import Routes
 require(path.join(__dirname, "./app/routing/apiRoutes"))(app);
 require(path.join(__dirname, "./app/routing/htmlRoutes"))(app);
-require(path.join.text());
 
 // Start Server
 app.listen(PORT, function() {
